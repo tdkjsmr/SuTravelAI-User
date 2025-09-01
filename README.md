@@ -14,7 +14,7 @@
 
 后端地址传送门：[SuTravelAI-Node](https://github.com/tdkjsmr/SuTravelAI-Node)
 
-### 技术（后端部分）
+### 技术（前端部分）
 
 - Vue
 - ElementUI
