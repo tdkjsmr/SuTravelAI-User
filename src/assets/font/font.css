@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "NAME";
+  font-weight: 700;
+  src: url("./i5YqVogzAbMA.woff2")format("woff2"),url("./i5YqVogzAbMA.woff")format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "appName";
+  font-weight: 400;
+  src: url("./ah9K38mNcg1g.woff2")format("woff2"),url("./ah9K38mNcg1g.woff")format("woff");
+  font-display: swap;
+}
