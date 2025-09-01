@@ -1,7 +1,7 @@
 <template>
     <div class="main-header">
         <div >
-            <p class="name-field">Hi，我是苏游宝</p>
+            <p class="name-field">Hi，我是苏TravelAI</p>
             <div style="height: 20px;"></div>
             <p class="intro-section">基于通义千问大模型，可以帮你查询火车票和天气情况哦！</p>
         </div>

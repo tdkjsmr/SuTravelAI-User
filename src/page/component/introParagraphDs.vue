@@ -1,7 +1,7 @@
 <template>
     <div class="main-header">
         <div >
-            <p class="name-field">Hi，我是苏游宝</p>
+            <p class="name-field">Hi，我是苏TravelAI</p>
             <div style="height: 20px;"></div>
             <p class="intro-section">基于deepseek-r1大模型，支持深度思考哦！</p>
         </div>

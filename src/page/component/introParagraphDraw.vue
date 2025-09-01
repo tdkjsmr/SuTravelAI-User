@@ -1,7 +1,7 @@
 <template>
     <div class="main-header">
         <div >
-            <p class="name-field">Hi，我是苏游宝</p>
+            <p class="name-field">Hi，我是苏TravelAI</p>
             <div style="height: 20px;"></div>
             <p class="intro-section">你的绘图工具，帮你画各种风格的风景照哦！</p>
         </div>

@@ -2,7 +2,7 @@
 <template>
 <div class="support-agent">
     <img src="@/assets/助手.png" alt="">
-    <p class="name-app">苏游宝</p>
+    <p class="name-app">苏TravelAI</p>
 </div>
 
 <div class="customer-service">

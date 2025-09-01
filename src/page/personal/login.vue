@@ -1,13 +1,12 @@
 <template>
     <div class="login-page">
-        <!-- <img src="@/assets/background/设计水墨画旅游 logo.png" class="login-img" alt=""> -->
         <div style="height: 100px;" class="zhanwei"></div>
-        <div class="login-tips">登录体验苏游宝</div>
+        <div class="login-tips">登录体验苏TravelAI</div>
 
         
         <van-form >
 
-<van-cell-group inset>
+            <van-cell-group inset>
                 <van-field name="uploader" label="头像上传">
                     <template #input>
                         <van-uploader 
