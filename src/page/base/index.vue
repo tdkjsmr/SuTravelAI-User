@@ -107,7 +107,6 @@ const openMy = () => {
 
 
 const navigateToMain = (event: any) => {
-  console.log('dianji')
   // 检查是否点击了页面右侧（可根据需求调整阈值）
   if (event.clientX > window.innerWidth * 0.7) {
       

@@ -31,11 +31,9 @@ class NlsClient {
     })
     return new Promise((resolve, reject) => {
       this._ws.on("open", ()=>{
-        //console.log("ws open")
         resolve()
       })
       this._ws.on("error", err=>{
-        //console.log("ws error:", err)
         reject(err)
       })
     })
@@ -52,7 +50,6 @@ class NlsClient {
 
   shutdown() {
     if (this._ws == null) {
-      //console.log("ws is null")
       return
     }
 

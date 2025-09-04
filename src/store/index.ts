@@ -39,16 +39,13 @@ export const chatBotMessage = defineStore('chatBotMessage', {
                 this.searchGoodsData = res.data;
             })
             //请求服务器发送大模型对话  
-            console.log("发送之前")
             await chatMessageApi({ chatMessage: this.messages })
             this.messages[this.messages.length - 1]["searchGoodsData"] = this.searchGoodsData;
             this.prohibit = false; //放开按钮点击
-            console.log("发送完毕")
 
             //存储对话记录到服务器
             const uploadChat = [...this.messages.slice(-2)]
             const result = await saveChatHistory({ messages: uploadChat,sessionId:userData().sessionId })
-            console.log(result)
   
             if (userData().newChat) {
                 userData().chatList.unshift(result.data)
@@ -59,7 +56,6 @@ export const chatBotMessage = defineStore('chatBotMessage', {
         },
         //接收服务器端返回的消息
         async serverData(res: serverDataType) {
-            console.log("接受完毕")
             let aiMessages = this.messages[this.messages.length - 1]
             aiMessages.progress = false  //关闭loading加载
             aiMessages["modelType"] = res.modelType
@@ -105,7 +101,6 @@ export const chatBotMessage = defineStore('chatBotMessage', {
                     const { city } = res.data;
                     aiMessages.content = `正在为您查询${city}的天气情况`;
                     const queryRes = await queryWeather({ city });
-                    console.log(queryRes.serviceCode)
                     // 考虑没有查询到
                     if (queryRes.serviceCode == 200) {
                     aiMessages.content = `以下是为您查询到的${city}的天气情况`;
@@ -200,7 +195,6 @@ export const userData = defineStore('userData', {
         async isNotLoggedIn(nickName:string,avatar:string) {
             //请求接口
             const result = await userlogin({ nickName, avatar })
-            console.log(result)
             //存储本地缓存
             localStorage.setItem('userInfo',JSON.stringify(result.data))
             this.userInfo = result.data

@@ -46,7 +46,6 @@ const fetchApi = async (url: string , method: "POST" | "GET" , body?: any , resT
     }
 
     const response = await fetch(url, options)
-    console.log(response)
 
     if (!response.ok) {
         const errorData = await response.json();
@@ -121,12 +120,10 @@ const fetchApi = async (url: string , method: "POST" | "GET" , body?: any , resT
                 for (let index = 0; index < matches.length; index++) {
                     var jsonString = matches[index]
                     const res = JSON.parse(jsonString)
-                    console.log(res)
                     chatBotMessage().serverData(res)
                 }
             }
             if (decodedString === "OK") {
-                console.log("输出完毕")
             }
         }
     }

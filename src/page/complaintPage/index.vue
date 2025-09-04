@@ -117,7 +117,6 @@ const selectObject = ({selectedOptions}:any) => {
 //选择地区
 const showPickerPlace = ref(false)
 const selectRegion = ({ selectedOptions }: any) => {
-    console.log(selectedOptions)
     selectData.location=''
     selectedOptions.forEach((element:any) => {
         selectData.location += element.text

@@ -88,7 +88,6 @@ const afterRead: UploaderAfterRead = async (file: any) => {
     })
     const fileurl = uploadAvatar.data.data.fileurl
     userInfo.avatar = fileurl
-    console.log(fileurl)
     showImage.value = false
     
 }
@@ -99,7 +98,6 @@ const beforeDelete = () => {
 
 const loading = ref(false)
 const login = async() => {
-    console.log(userInfo.avatar)
     loading.value = true
     //上传头像
     await userData().isNotLoggedIn(
